@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@100;200;300;400;500;600;700&family=Lexend+Deca:wght@100;200;300;400;700&family=Poppins:wght@300;400;500;600;700;800&display=swap');
+:root{
+    /* primary */
+    --color-Bright-orange: hsl(31, 77%, 52%);
+    --color-Dark-cyan: hsl(184, 100%, 22%);
+    --color-Very-dark-cyan: hsl(179, 100%, 13%);
+    /* neutral */
+    --color-Transparent-white: hsla(0, 0%, 100%, 0.75); /*paragraphs*/
+    --color-Very-light-gray: hsl(0, 0%, 95%); /*(background, headings, buttons)*/
+}
+body{
+    height: 100vh;
+    font-family: sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+}
+.container{
+    height: 500px;
+    width: 90%;
+    display: flex;
+    width: 807px;
+    /* flex-wrap: wrap; */
+}
+.car{
+    color: #fff;
+    padding: 30px;
+}
+.car-logo{
+    width: 70px;
+    height: 50px;
+    margin-bottom: 10px;
+}
+.car-title{
+    text-transform: uppercase;
+    font-size: 30px;
+    margin-bottom: 30px;
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    color: var(--color-Very-light-gray);
+
+}
+.car-article{
+    /* letter-spacing: .1em; */
+    margin-bottom: 100px;
+    line-height: 1.6;
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+    color: var(--color-Transparent-white);
+}
+a{
+    text-decoration: none;
+    padding: 15px 30px;
+    background: var(--color-Very-light-gray);
+    border-radius: 50px;
+    text-align: center;
+    text-transform: capitalize;
+}
+.sedan{
+    background: var(--color-Bright-orange);
+}
+.sedan a{
+    color: var(--color-Bright-orange);
+}
+.suv{
+    background: var(--color-Dark-cyan);
+}
+.suv a{
+    color: var(--color-Dark-cyan);
+}
+.luxury{
+    background: var(--color-Very-dark-cyan);
+}
+.luxury a{
+    color: var(--color-Very-dark-cyan);
+} 
+.luxury a:hover{
+    background-color: var(--color-Very-dark-cyan);
+}
